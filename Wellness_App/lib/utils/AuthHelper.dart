@@ -13,13 +13,13 @@ class AuthHelper {
     print('in method');
     dio = Dio();
     dio
-        .post('https://4296-197-177-74-206.ngrok.io/api/customAuth',
+        .post('https://bfc1-197-177-74-206.ngrok.io/api/customAuth',
             data: payload)
         .then((response) {
       //Redirect user to welcome page
       print('login response');
       print(response.data['auth']);
-      if (response.data['auth']) {
+      if (response.data['auth'] == 'true') {
         //Login successful
         Navigator.push(context, MaterialPageRoute(builder: (context) {
           return HomePage();
@@ -40,7 +40,7 @@ class AuthHelper {
     print('verifying');
     print(payload['email']);
     dio
-        .post('https://4296-197-177-74-206.ngrok.io/api/verify', data: payload)
+        .post('https://bfc1-197-177-74-206.ngrok.io/api/verify', data: payload)
         .then((value) {
       print('Verification response');
       print(value.data);
@@ -66,7 +66,7 @@ class AuthHelper {
     print('resending');
     print(email);
     dio
-        .get('https://4296-197-177-74-206.ngrok.io/api/sendMail/$email')
+        .get('https://bfc1-197-177-74-206.ngrok.io/api/sendMail/$email')
         .then((value) {
       print('Resend response');
       print(value.data);
