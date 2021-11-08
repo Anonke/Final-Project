@@ -3,7 +3,9 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Dashboard/HomePage.dart';
+import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/Welcome/welcome_screen.dart';
+import 'package:flutter_auth/utils/UriHelper.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class AuthHelper {
@@ -11,15 +13,16 @@ class AuthHelper {
 
   auth(payload, context) {
     print('in method');
+    var url = 
     dio = Dio();
     dio
-        .post('https://bfc1-197-177-74-206.ngrok.io/api/customAuth',
+        .post(UriHelper.getUrl('api/customAuth'),
             data: payload)
         .then((response) {
       //Redirect user to welcome page
       print('login response');
-      print(response.data['auth']);
-      if (response.data['auth'] == 'true') {
+      print(response.data['auth'].runtimeType);
+      if (response.data['auth'] == true) {
         //Login successful
         Navigator.push(context, MaterialPageRoute(builder: (context) {
           return HomePage();
@@ -40,7 +43,7 @@ class AuthHelper {
     print('verifying');
     print(payload['email']);
     dio
-        .post('https://bfc1-197-177-74-206.ngrok.io/api/verify', data: payload)
+        .post(UriHelper.getUrl('api/verify'), data: payload)
         .then((value) {
       print('Verification response');
       print(value.data);
@@ -48,7 +51,7 @@ class AuthHelper {
       if (value.data == 'true') {
         //redirect to welcome page
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return HomePage();
+          return LoginScreen();
         }));
       } else {
         //show error toast
@@ -66,7 +69,7 @@ class AuthHelper {
     print('resending');
     print(email);
     dio
-        .get('https://bfc1-197-177-74-206.ngrok.io/api/sendMail/$email')
+        .get(UriHelper.getUrl('api/sendMail/$email'))
         .then((value) {
       print('Resend response');
       print(value.data);

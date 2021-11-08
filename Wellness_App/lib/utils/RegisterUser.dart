@@ -11,10 +11,9 @@ class RegisterUser {
     //Make request to db
 
     Dio dio = new Dio();
-    var uri = UriHelper().uri;
     print('Making request');
     dio
-        .post('https://bfc1-197-177-74-206.ngrok.io/api/register',
+        .post(UriHelper.getUrl('api/register'),
             data: payload)
         .then((value) async {
       Fluttertoast.showToast(msg: 'Account successfully created');

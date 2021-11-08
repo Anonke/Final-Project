@@ -1,4 +1,6 @@
 class UriHelper {
-  Uri _uri = Uri.http('192.168.35.124:8000', '/api/register');
-  get uri => _uri;
+   static getUrl(route) {
+    var url = "https://6fea-197-248-92-161.ngrok.io/";
+    return url + route;
+  }
 }
