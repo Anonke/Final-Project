@@ -5,8 +5,11 @@ INJECTED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness
 INJECTED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:1:1-30:12
 INJECTED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:1:1-30:12
 MERGED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:1:1-30:12
+MERGED from [:nb_utils] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\nb_utils\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:shared_preferences] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:fluttertoast] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ambrose\.gradle\caches\transforms-3\befd18ccaeeadfcd102c7d66fdadd114\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ambrose\.gradle\caches\transforms-3\94100877aad6ca91c70b578f9abb759e\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Ambrose\.gradle\caches\transforms-3\1999ec5cfbcd670e45a7329bbd3010cc\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -39,6 +42,8 @@ INJECTED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness
 		ADDED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:1:11-69
 application
 ADDED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:8:5-29:19
+MERGED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\Ambrose\.gradle\caches\transforms-3\6b099d239d44b12fac32ffd17bec3825\transformed\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Ambrose\.gradle\caches\transforms-3\6b099d239d44b12fac32ffd17bec3825\transformed\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ambrose\.gradle\caches\transforms-3\221ba789f91250833043886128932c7c\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -85,10 +90,16 @@ uses-sdk
 INJECTED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml
+MERGED from [:nb_utils] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\nb_utils\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:nb_utils] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\nb_utils\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\shared_preferences\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ambrose\.gradle\caches\transforms-3\befd18ccaeeadfcd102c7d66fdadd114\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Ambrose\.gradle\caches\transforms-3\befd18ccaeeadfcd102c7d66fdadd114\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\Ambrose\.gradle\caches\transforms-3\94100877aad6ca91c70b578f9abb759e\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -127,3 +138,15 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\debug\AndroidManifest.xml:6:5-66
 	android:name
 		ADDED from C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\debug\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:connectivity] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [:connectivity] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
