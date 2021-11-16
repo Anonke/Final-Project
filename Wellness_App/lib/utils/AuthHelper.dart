@@ -14,7 +14,8 @@ class AuthHelper {
 
   auth(payload, context) {
     print('in method');
-    var url = 
+    print(payload);
+    print(UriHelper.getUrl('api/customAuth'));
     dio = Dio();
     dio
         .post(UriHelper.getUrl('api/customAuth'),
