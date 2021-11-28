@@ -23,28 +23,50 @@ class _AlertsState extends State<Alerts> {
       ),
       body: Container(
         child: Center(
-          child: Column(
-            children: [
-    
-              SizedBox(
-                height: 10,
-              ),
-              ElevatedButton(
-                  onPressed: () {
-                    print('Send alert clicked');
-                    sendAlert(context);
-                  },
-                  child: Text('Send Alert')),
-              SizedBox(
-                height: 20,
-              ),
-              ElevatedButton(
-                  onPressed: () {
-                    print('create alertee clicked, show dialog with form');
-                    showAlert(context);
-                  },
-                  child: Text('Create Alertee')),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.only(left:8.0, right: 8.0),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  color: Colors.blue.shade100,
+                  child: ListTile(
+                    leading: Container(
+                      color: Colors.amber,
+                      padding: EdgeInsets.all(10),
+                      child: Icon(Icons.send),
+                    ),
+                    title: Text('Send Alert'),
+                    trailing: Icon(Icons.email),
+                    onTap: () {
+                      print('Send alert clicked');
+                      sendAlert(context);
+                    },
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  color: Colors.blue.shade100,
+                  child: ListTile(
+                    leading: Container(
+                      color: Colors.amber,
+                      padding: EdgeInsets.all(10),
+                      child: Icon(Icons.create),
+                    ),
+                    title: Text('Create Alert'),
+                    trailing: Icon(Icons.check),
+                    onTap: () {
+                      print('create alertee clicked, show dialog with form');
+                      showAlert(context);
+                    },
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -117,8 +139,7 @@ class _AlertsState extends State<Alerts> {
 
                       if (_formKey.currentState.validate()) {
                         //form is valid
-                        var _sPrefs = await
-                            SharedPreferences.getInstance();
+                        var _sPrefs = await SharedPreferences.getInstance();
                         var payload = {
                           'user_id': _sPrefs.getInt('userId'),
                           'alerteeEmail': emailController.text,

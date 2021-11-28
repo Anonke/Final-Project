@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Dashboard/HomePage.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
-import 'package:flutter_auth/Screens/T14TravelScreen.dart';
+import 'package:flutter_auth/Screens/TutorialsScreen.dart';
 import 'package:flutter_auth/Screens/Welcome/welcome_screen.dart';
 import 'package:flutter_auth/utils/UriHelper.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -29,7 +29,7 @@ class AuthHelper {
       if (response.data['auth'] == true) {
         //Login successful
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return T14TravelScreen();
+          return TutorialsScreen();
         }));
       } else {
         //Wrong credentials

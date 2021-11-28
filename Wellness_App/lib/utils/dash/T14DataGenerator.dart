@@ -27,9 +27,9 @@ List<SubscriptionModel> getTopTravelList() {
   topTravelList.add(SubscriptionModel(name: 'What are mental health problems?', img: t14_travel3, url: 'https://www.youtube.com/watch?v=ieXB-BGxYwg'));
   topTravelList.add(SubscriptionModel(name: '10 Signs Your Mental Health is Getting Worse', img: t14_travel4, url: 'https://www.youtube.com/watch?v=eS_MuaOYBIo'));
   topTravelList.add(SubscriptionModel(name: '10 Mental Illness Signs You Should Not Ignore', img: t14_travel5, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'));
-  topTravelList.add(SubscriptionModel(name: 'We All Have Mental Health', img: t14_travel6, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'));
-  topTravelList.add(SubscriptionModel(name: 'Mental Health: In Our Own Words', img: t14_travel7, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'));
-  topTravelList.add(SubscriptionModel(name: 'Mental Health: In Our Own Words', img: t14_travel8, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'));
+  topTravelList.add(SubscriptionModel(name: 'We All Have Mental Health', img: t14_travel6, url: 'https://www.youtube.com/watch?v=oxx564hMBUI'));
+  topTravelList.add(SubscriptionModel(name: 'Mental Health: In Our Own Words', img: t14_travel7, url: 'https://www.youtube.com/watch?v=eS_MuaOYBIo'));
+  topTravelList.add(SubscriptionModel(name: 'Mental Health: In Our Own Words', img: t14_travel8, url: 'https://www.youtube.com/watch?v=ieXB-BGxYwg'));
 
   return topTravelList;
 }
