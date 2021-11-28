@@ -25,9 +25,7 @@ class _AlertsState extends State<Alerts> {
         child: Center(
           child: Column(
             children: [
-              Card(
-                child: Text('Ambrose Kyusya'),
-              ),
+    
               SizedBox(
                 height: 10,
               ),
