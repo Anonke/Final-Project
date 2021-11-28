@@ -25,60 +25,62 @@
 21         FlutterApplication and put your custom class here.
 22    -->
 23    <application
-23-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:8:5-29:19
+23-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:8:5-30:19
 24        android:name="io.flutter.app.FlutterApplication"
 24-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:9:9-57
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.1.0] C:\Users\Ambrose\.gradle\caches\transforms-3\6b099d239d44b12fac32ffd17bec3825\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
 26        android:debuggable="true"
 27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:11:9-43
-28        android:label="flutter_auth" >
+27-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:12:9-43
+28        android:label="flutter_auth"
 28-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:10:9-37
-29        <activity
-29-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:12:9-23:20
-30            android:name="com.example.flutter_auth.MainActivity"
-30-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:13:13-41
-31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-31-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:16:13-163
-32            android:hardwareAccelerated="true"
-32-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:17:13-47
-33            android:launchMode="singleTop"
-33-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:14:13-43
-34            android:theme="@style/LaunchTheme"
-34-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:15:13-47
-35            android:windowSoftInputMode="adjustResize" >
-35-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:18:13-55
-36            <intent-filter>
-36-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:19:13-22:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:20:17-68
-37-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:20:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:21:17-76
-39-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:21:27-74
-40            </intent-filter>
-41        </activity>
-42        <!--
-43             Don't delete the meta-data below.
-44             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-45        -->
-46        <meta-data
-46-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:26:9-28:33
-47            android:name="flutterEmbedding"
-47-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:27:13-44
-48            android:value="2" />
-48-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:28:13-30
-49
-50        <activity
-50-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
-51            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-51-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
-52            android:exported="false"
-52-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
-53            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-53-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
-54    </application>
-55
-56</manifest>
+29        android:usesCleartextTraffic="true" >
+29-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:11:9-44
+30        <activity
+30-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:13:9-24:20
+31            android:name="com.example.flutter_auth.MainActivity"
+31-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:14:13-41
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+32-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:17:13-163
+33            android:hardwareAccelerated="true"
+33-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:18:13-47
+34            android:launchMode="singleTop"
+34-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:15:13-43
+35            android:theme="@style/LaunchTheme"
+35-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:16:13-47
+36            android:windowSoftInputMode="adjustResize" >
+36-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:19:13-55
+37            <intent-filter>
+37-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:20:13-23:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:21:17-68
+38-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:21:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:22:17-76
+40-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:22:27-74
+41            </intent-filter>
+42        </activity>
+43        <!--
+44             Don't delete the meta-data below.
+45             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+46        -->
+47        <meta-data
+47-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:27:9-29:33
+48            android:name="flutterEmbedding"
+48-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:28:13-44
+49            android:value="2" />
+49-->C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\android\app\src\main\AndroidManifest.xml:29:13-30
+50
+51        <activity
+51-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+52            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+52-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+53            android:exported="false"
+53-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+54            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+54-->[:url_launcher] C:\Users\Ambrose\Projects\Other\ben flutter\Final-Project\Wellness_App\build\url_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+55    </application>
+56
+57</manifest>

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/Screens/Alerts.dart';
+import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -8,6 +10,7 @@ import 'package:flutter_auth/utils/dash/T14DataGenerator.dart';
 import 'package:flutter_auth/utils/dash/T14Model.dart';
 import 'package:flutter_auth/utils/dash/T14Strings.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_auth/Screens/Login/login_screen.dart';
 
 class T14TravelScreen extends StatefulWidget {
   @override
@@ -78,6 +81,20 @@ class _T14TravelScreenState extends State<T14TravelScreen> {
                 // Then close the drawer
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return LoginScreen();
+                }));
+              },
+            ),
+
+            SizedBox(height: 10,),
+
+             ListTile(
+              title: const Text('Alerts'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return Alerts();
                 }));
               },
             ),

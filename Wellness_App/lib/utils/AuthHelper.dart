@@ -8,6 +8,7 @@ import 'package:flutter_auth/Screens/T14TravelScreen.dart';
 import 'package:flutter_auth/Screens/Welcome/welcome_screen.dart';
 import 'package:flutter_auth/utils/UriHelper.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:nb_utils/nb_utils.dart';
 
 class AuthHelper {
   Dio dio;
@@ -18,12 +19,13 @@ class AuthHelper {
     print(UriHelper.getUrl('api/customAuth'));
     dio = Dio();
     dio
-        .post(UriHelper.getUrl('api/customAuth'),
-            data: payload)
-        .then((response) {
+        .post(UriHelper.getUrl('api/customAuth'), data: payload)
+        .then((response) async {
       //Redirect user to welcome page
       print('login response');
-      print(response.data['auth'].runtimeType);
+      print(response.data['user']);
+      var sPrefs = await SharedPreferences.getInstance();
+      sPrefs.setInt('userId', response.data['user']['id']);
       if (response.data['auth'] == true) {
         //Login successful
         Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -36,7 +38,8 @@ class AuthHelper {
                 'These credentials do not match our records. Please try again.');
       }
     }).catchError((e) {
-      print("An error ...world" + e.message);
+      print('error encountered');
+      print(e);
     });
   }
 
@@ -44,9 +47,7 @@ class AuthHelper {
     dio = Dio();
     print('verifying');
     print(payload['email']);
-    dio
-        .post(UriHelper.getUrl('api/verify'), data: payload)
-        .then((value) {
+    dio.post(UriHelper.getUrl('api/verify'), data: payload).then((value) {
       print('Verification response');
       print(value.data);
 
@@ -70,9 +71,7 @@ class AuthHelper {
     dio = Dio();
     print('resending');
     print(email);
-    dio
-        .get(UriHelper.getUrl('api/sendMail/$email'))
-        .then((value) {
+    dio.get(UriHelper.getUrl('api/sendMail/$email')).then((value) {
       print('Resend response');
       print(value.data);
     }).catchError((err) {

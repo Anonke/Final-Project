@@ -1,6 +1,6 @@
 class UriHelper {
   static getUrl(route) {
-    var url = "https://e506-197-248-92-161.ngrok.io/";
+    var url = "https://48d3-102-140-239-103.ngrok.io/";
     return url + route;
   }
 }
