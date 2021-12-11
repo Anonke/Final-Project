@@ -1,3 +1,4 @@
+import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/utils/AlertsHelper.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -92,14 +93,19 @@ class _AlertsState extends State<Alerts> {
                               icon: Icon(Icons.email),
                               hintText: 'Whats your email address',
                               labelText: 'Email address'),
-                          controller: emailController,
-                          validator: (value) {
-                            if (value == null || value == '') {
-                              return 'Please enter an email addresses.';
-                            }
+                              controller: emailController,
+                              validator: (value) {
+                                if (value == null || value == '') {
+                                  return 'Please enter an email addresses.';
+                                }
 
-                            return null;
-                          },
+                                //check if email is valid
+                                final bool isValid = EmailValidator.validate(value);
+                                if (!isValid) {
+                                  return 'Please enter a valid email address.';
+                                }
+                                return null;
+                              },
                         ),
                         SizedBox(height: 10),
                         TextFormField(

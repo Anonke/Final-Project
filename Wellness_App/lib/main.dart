@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/Screens/Alerts.dart';
 import 'package:flutter_auth/Screens/Dashboard/HomePage.dart';
+import 'package:flutter_auth/Screens/Faq.dart';
 import 'package:flutter_auth/Screens/OtpScreen.dart';
 import 'package:flutter_auth/Screens/TutorialsScreen.dart';
 import 'package:flutter_auth/Screens/TutorsScreen.dart';

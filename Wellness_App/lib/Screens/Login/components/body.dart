@@ -3,6 +3,7 @@ import 'package:flutter_auth/Screens/Login/components/background.dart';
 import 'package:flutter_auth/Screens/Signup/signup_screen.dart';
 import 'package:flutter_auth/components/already_have_an_account_acheck.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
+import 'package:flutter_auth/components/rounded_input_email.dart';
 import 'package:flutter_auth/components/rounded_input_field.dart';
 import 'package:flutter_auth/components/rounded_password_field.dart';
 import 'package:flutter_auth/utils/AuthHelper.dart';
@@ -46,7 +47,7 @@ class _BodyState extends State<Body> {
                 key: _formkey,
                 child: Column(
                   children: [
-                    RoundedInputField(
+                    RoundedInputEmail(
                       hintText: "Your Email",
                       // onChanged: (value) {},
                       controller: _emailController,

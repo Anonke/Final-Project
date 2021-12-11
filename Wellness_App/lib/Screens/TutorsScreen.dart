@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Alerts.dart';
+import 'package:flutter_auth/Screens/Faq.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/TutorialsScreen.dart';
+import 'package:flutter_auth/Screens/User/ProfileApp.dart';
 import 'package:flutter_auth/components/rounded_button.dart';
 import 'package:nb_utils/nb_utils.dart';
 
@@ -121,8 +123,24 @@ class _TutorsScreenState extends State<TutorsScreen> {
               height: 10,
             ),
 
+            ListTile(
+              title: const Text('FAQs'),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return Faq();
+                }));
+              },
+            ),
+
+            SizedBox(
+              height: 10,
+            ),
+
             Padding(
-              padding: const EdgeInsets.only(left :8.0),
+              padding: const EdgeInsets.only(left: 8.0),
               child: Container(
                 color: Colors.red[400],
                 child: ListTile(
@@ -131,7 +149,8 @@ class _TutorsScreenState extends State<TutorsScreen> {
                     // Update the state of the app
                     // ...
                     // Then close the drawer
-                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
                       return LoginScreen();
                     }));
                   },
@@ -216,9 +235,12 @@ class _TutorsScreenState extends State<TutorsScreen> {
                               child: Container(
                                 width: 150,
                                 child: ElevatedButton(
-                                  child: Text('Contact'),
+                                  child: Text('View More'),
                                   onPressed: () {
-                                    _launchURL(data.url);
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context) {
+                                     return ProfileApp(profileData: data,);
+                                    }));
                                   },
                                 ),
                               )),
@@ -271,9 +293,12 @@ class _TutorsScreenState extends State<TutorsScreen> {
                               child: Container(
                                 width: 150,
                                 child: ElevatedButton(
-                                  child: Text('Contact'),
+                                  child: Text('View More'),
                                   onPressed: () {
-                                    _launchURL(data.url);
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context) {
+                                     return ProfileApp(profileData: data,);
+                                    }));
                                   },
                                 ),
                               )),

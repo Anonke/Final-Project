@@ -3,14 +3,18 @@ import 'package:flutter/cupertino.dart';
 class SubscriptionModel {
   String name;
   String country;
-    String url;
+  String url;
   String img;
+   String rating;
+  String experience;
+  String followers;
+  String bio;
   int price;
   Color backgroundColor;
   Color bannerColor;
   String userImg;
 
-  SubscriptionModel({this.name, this.img, this.url, this.price, this.backgroundColor, this.bannerColor, this.userImg, this.country});
+  SubscriptionModel({this.rating, this.experience, this.followers, this.bio,  this.name, this.img, this.url, this.price, this.backgroundColor, this.bannerColor, this.userImg, this.country});
 }
 
 class TravelModel {

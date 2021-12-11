@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Alerts.dart';
+import 'package:flutter_auth/Screens/Faq.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/Login/login_screen.dart';
 import 'package:flutter_auth/Screens/TutorsScreen.dart';
@@ -123,6 +124,23 @@ class _TutorialsScreenState extends State<TutorialsScreen> {
                 }));
               },
             ),
+
+            SizedBox(
+              height: 10,
+            ),
+
+            
+            ListTile(
+            title: const Text('FAQs'),
+            onTap: () {
+              // Update the state of the app
+              // ...
+                  // Then close the drawer
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Faq();
+                  }));
+                },
+              ),
 
             SizedBox(
               height: 10,
@@ -294,7 +312,7 @@ class _TutorialsScreenState extends State<TutorialsScreen> {
         initialVideoId: id,
         flags: YoutubePlayerFlags(
           autoPlay: true,
-          mute: true,
+          mute: false,
         ),
       );
     setState(() {

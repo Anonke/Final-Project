@@ -37,28 +37,47 @@ List<SubscriptionModel> getTopTravelList() {
 List<SubscriptionModel> getRecommendList() {
   List<SubscriptionModel> recommendList = [];
   recommendList.add(
-    SubscriptionModel(name: 'Ruth Mwangi', img: t14_travel9, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+    SubscriptionModel(rating: '4', experience: '5 yrs', followers: '543', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+                         name: 'Ruth Mwangi', img: t14_travel9, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
   recommendList.add(
-    SubscriptionModel(name: 'Christina C', img: t14_travel10, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+    SubscriptionModel(
+      rating: '2', experience: '3 yrs', followers: '2333', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+      name: 'Christina C', img: t14_travel10, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
   recommendList.add(
-    SubscriptionModel(name: 'Iregi Mwenja', img: t14_travel2, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+  SubscriptionModel(
+      
+      rating: '4', experience: '5 yrs', followers: '543', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+                    name: 'Iregi Mwenja', img: t14_travel2, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
   recommendList.add(
-    SubscriptionModel(name: 'Faith Mathenge', img: t14_travel4, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+    SubscriptionModel(rating: '4', experience: '5 yrs', followers: '543', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+                    name: 'Faith Mathenge', img: t14_travel4, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
   recommendList.add(
-    SubscriptionModel(name: 'Margaret Kagwe', img: t14_travel6, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+    SubscriptionModel(rating: '4', experience: '5 yrs', followers: '543', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+                    name: 'Margaret Kagwe', img: t14_travel6, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
   recommendList.add(
-    SubscriptionModel(name: 'Arthur Muriuki', img: t14_travel6, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+    SubscriptionModel(rating: '4', experience: '5 yrs', followers: '543', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+                    name: 'Arthur Muriuki', img: t14_travel6, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
   recommendList.add(
-    SubscriptionModel(name: 'Peter Breggin', img: t14_travel1, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+    SubscriptionModel(rating: '4', experience: '5 yrs', followers: '543', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+                    name: 'Peter Breggin', img: t14_travel1, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
   recommendList.add(
-    SubscriptionModel(name: 'Zac Currier', img: t14_travel3, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
+    SubscriptionModel(rating: '4', experience: '5 yrs', followers: '543', bio: 'My name is Alice and I am  a freelance mobile app developper.\n'
+                    'if you need any mobile app for your company then contact me for more informations',
+                    name: 'Zac Currier', img: t14_travel3, url: 'https://www.linkedin.com/in/christinachanyalenjou/?originalSubdomain=ke'),
   );
 
   return recommendList;
